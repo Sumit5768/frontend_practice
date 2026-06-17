@@ -1,0 +1,59 @@
+.div1{
+    background-color: red;
+    height:100px;
+    width: 100px;
+    transition: all;
+    transition-duration: 5s;
+    transition-timing-function:linear;
+  
+}
+
+.div2{
+    background-color: rgb(82, 6, 213);
+    height:100px;
+    width: 100px;
+    transition: all 3s ease-in;
+    transition-delay: 3s;
+    transform: translate(200px);
+   
+}
+.div3{
+    background-color: rgb(247, 23, 138);
+    height:100px;
+    width: 100px;
+    transition: all;
+    transition-duration: 5s;
+    transform: rotate(270deg);
+
+   
+}
+.div4{
+    background-color: rgb(244, 248, 12);
+    height:100px;
+    width: 100px;
+    margin-left: 500px;
+    transition-duration: 5s;
+    transform: scale(3);
+    
+    
+}
+.div5{
+    background-color: red;
+    height:100px;
+    width: 100px;
+    margin-left: 900px;
+  
+}
+.div5:hover{
+    transition-duration: 5s;
+   
+    transform:skew(50deg);
+   
+}
+div:hover{
+    background-color: green;
+}
+
+div{
+    margin: 20px;
+}

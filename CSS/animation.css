@@ -1,0 +1,115 @@
+.div1 {
+    height: 100px;
+    width: 100px;
+    margin-left: 500px;
+    
+    border-radius: 50%;
+    border-left: 15px solid black;
+    border-right: 15px solid red;
+    border-top: 15px solid red;
+    border-bottom: 15px solid red;
+
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal
+}
+
+@keyframes loader {
+    from {
+        rotate: 0deg;
+
+    }
+
+    to {
+        rotate: 360deg;
+
+    }
+}
+
+
+.div2 {
+    margin-left: 200px;
+    height: 500px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid black;
+}
+
+.red {
+    height: 120px;
+    width: 120px;
+    border: 5px solid black;
+    border-radius: 50%;
+    animation-name: light1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal
+}
+
+.green {
+    height: 120px;
+    width: 120px;
+    border: 5px solid black;
+    border-radius: 50%;
+    animation-name: light2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-direction: normal
+}
+
+.yellow {
+    height: 120px;
+    width: 120px;
+    border: 5px solid black;
+    border-radius: 50%;
+    animation-name: light3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-direction: normal
+}
+
+@keyframes light1 {
+    from {
+        background-color: red;
+
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes light2 {
+    from {
+        background-color: green;
+
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes light3 {
+    from {
+        background-color: yellow;
+
+    }
+
+    to {
+        background-color: white;
+    }
+}
+   

@@ -1,0 +1,19 @@
+.a{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    font-size:10px;
+
+}
+#aa{
+    font-size: 2em;
+    background-color: brown;
+}
+#ab{
+    font-size: 3rem;
+    background-color: blueviolet;
+}   
+#ac{
+    background-color: aquamarine;
+    width: 30%;
+}

@@ -1,0 +1,28 @@
+.a{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+} 
+.b{
+     background-color: rgb(17, 221, 78);
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top:700px;
+    z-index: 2;
+}
+.c{
+     background-color: rgb(223, 13, 13);
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    bottom:0px;
+}
+.d{
+     background-color: rgb(199, 244, 66);
+    height: 150px;
+    width: 150px;
+    position: sticky;
+    top:100px;
+}

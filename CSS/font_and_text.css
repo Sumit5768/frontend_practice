@@ -1,0 +1,26 @@
+#aa{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    background-color: beige;
+}
+#ab{
+    text-align: center;
+    text-transform: capitalize;
+    background-color:burlywood;
+}
+#ac{
+    text-decoration: none;
+    text-shadow: 2px;
+    background-color:blueviolet;
+}
+h1{
+    text-align: center;
+    background-color: cornflowerblue;
+    color: red;
+    font-weight: normal;
+
+}
+*{
+    margin: auto;
+    padding: 3px;
+}
