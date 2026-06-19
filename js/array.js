@@ -62,6 +62,47 @@ let found1 = arr2.findIndex(arr2 => arr2 >25);
 console.log(found1);
 
 
+// Looping and Iterating Over Arrays
+
+
+// forEach() - Loops through the array (no return value)
+
+
+let number = [5,3,5,6,686,5,656,65,6,896,56,100];
+number.forEach(num => console.log(num*4));
+
+// map() - Returns a new array with transformed values
+
+let double = number.map(num => num *2);
+console.log(double);
+
+
+// filter() - Returns a new array with filtered elements
+
+let filtered = number.filter(num => num > 100);
+console.log(filtered);
+
+
+number.reverse();
+console.log(number);
+
+
+number.sort();
+console.log(number);
+
+let arr4 = [5,1,325,1,56,68,632,68,62,68]
+let arr5 = ["sumit","shubham","sandeep"]
+
+let newarr = arr4.concat(arr5);
+console.log(newarr);
+
+
+// reduce() - Reduces an array to a single value
+
+let sum = number.reduce((acc,num) => acc+num,0);
+console.log(sum)
+
+
 
 
 
