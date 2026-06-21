@@ -163,7 +163,7 @@ Object.setPrototypeOf(obj, proto);
 
 console.log(obj.greet());
 
-// Object.create(proto) - Creates a new object with the given prototype
+// Object.create(proto) - Creates a new object with the given prototype.
 
 let newObject = Object.create(proto);
 console.log(newObject.greet()); 
