@@ -10,7 +10,7 @@ let student = {
 //2. Adding, Updating, and Deleting Properties
 // Object.assign(target, source) - Copies properties from one object to another
 
-let  obj1 = { a: 1, b: 2 };
+let  obj1 = { a: 1, b: 2 ,e: 6 };
 let obj2 = { c: 3, d: 4 };
 
 Object.assign(obj1, obj2);
