@@ -68,6 +68,7 @@ console.log( Object.entries(student));
 
 
 // 4. Checking Object Properties
+
 // hasOwnProperty(prop) - Checks if an object has a property
 
 console.log(student.hasOwnProperty("name"));
