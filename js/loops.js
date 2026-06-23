@@ -1,0 +1,43 @@
+// loop
+
+// for loop--- The for loop is used when we know in advance how many times we want to execute a block of code.
+
+for(let  i = 0; i <= 10 ; i++){
+    console.log(`the number is ${i}`);
+}
+
+for (let i = 2; i <=20; i+=2){
+    console.log(` ${i}`);
+}
+
+let b = 5;
+for (let i = 1; i<=10; i++){
+    console.log(`${b}*${i}=${b*i}`)
+}
+let c = 15;
+for (let i = 1; i<=10; i++){
+    console.log(`${c}*${i}=${c*i}`)
+}
+
+
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+for (let i = 0; i < days.length; i++) {
+  console.log(days[i]);
+}
+
+let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+for (let i = 0; i < month.length; i++) {
+  console.log(month[i]);
+}
+
+
+console.log("--".repeat(50));
+
+// while loop--The while loop executes a block of code as long as the given condition is true. It is used when we do not know beforehand how many times the loop should run.
+
+let contdown = 1;
+
+while(contdown<50){
+    console.log(` remaining time is ${contdown}`);
+    contdown++ ;    
+}
