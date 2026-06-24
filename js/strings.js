@@ -113,7 +113,8 @@ console.log(email.match(/\S+@\S+\.\S+/));
 // 17. padStart() --Pads string with characters at the start until it reaches given length.
 
 let bill = "33";
-console.log(bill.padStart(5,"*"));
+
+console.log(bill.padStart(5,"⭐"));
 
 
 // 18. padEnd()--Pads string with characters at the end until it reaches given length.
