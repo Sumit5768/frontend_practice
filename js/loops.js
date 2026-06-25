@@ -35,9 +35,42 @@ console.log("--".repeat(50));
 
 // while loop--The while loop executes a block of code as long as the given condition is true. It is used when we do not know beforehand how many times the loop should run.
 
-let contdown = 1;
+let time = 1;
 
-while(contdown<50){
-    console.log(` remaining time is ${contdown}`);
-    contdown++ ;    
+while(time<50){
+    console.log(` remaining time is ${time}`);
+    time++ ;    
 }
+
+
+
+// example practice
+
+let dayys = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+for (let i = 0; i<dayys.length ; i++)
+    if (dayys[i] === 'saturday'|| dayys[i] === 'sunday'){
+        console.log(dayys[i],"booking is closed ")
+    }
+    else{
+        console.log(dayys[i],"booking is open")
+    }
+
+
+
+// do while loop--
+
+let a = 1;
+do {
+    console.log(a);
+    a++;
+}while(a<=10);
+
+let contdown = 1;
+do{
+    console.log(contdown);
+    contdown++;
+}while(contdown<10);
+
+// for in loop
+
+
