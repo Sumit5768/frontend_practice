@@ -57,7 +57,7 @@ for (let i = 0; i<dayys.length ; i++)
 
 
 
-// do while loop--
+// do while loop----The do...while loop is similar to the while loop, but it ensures that the code runs at least once before checking the condition.
 
 let a = 1;
 do {
@@ -71,6 +71,22 @@ do{
     contdown++;
 }while(contdown<10);
 
-// for in loop
+// for in loop--The for...in loop is used to iterate over the properties of an object
 
 
+let person = {
+    name : "sumit",
+    age : 21,
+    address : "Unhel"
+}
+ for(let key in person){
+    console.log(`${key}:${person[key]}`);
+ }
+
+//  for...of Loop--The for...of loop is used to iterate over iterable objects like arrays and strings.
+
+
+let fruits = ['mango', 'orange','apple', 'watermelon'];
+for (let fruit of fruits){
+    console.log(`${fruit}`)
+}
