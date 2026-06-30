@@ -11,6 +11,7 @@ function car(brand){
     console.log(brand, "is the fastest car in racing")
 }
 
+
 car("BMW");
 car("dodge challenger srt demon 170")
 
@@ -25,6 +26,19 @@ function add(a , b,c){
 add(a ,b,c);
 
 add(5,5,5);
+
+
+
+function vote(age){
+    if (age >= 18){
+        console.log("you are elligible for voting")
+    }
+    else{
+        console.log("you are not elligible for voting")
+    }
+}
+
+vote(15)
 
 
 
