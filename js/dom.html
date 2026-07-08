@@ -1,0 +1,121 @@
+<!-- 1. Accessing Elements -->
+
+<!-- document.getElementById() -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="heading">DOM </h1>
+    <p id="pera">this is a paragraph on dom</p>
+    <button id="btn" onclick="change_heading()">Click Me</button>
+
+    <h2 id="second">second heading</h2>
+    <button id="btn2" onclick="second()">click</button>
+
+
+<script>
+    function second(){
+        document.getElementById("second").style.color="red";
+        document.getElementById("btn2").style.color="red";
+    }
+</script>
+
+
+<script>
+    function change_heading(){
+        document.getElementById("heading").innerText="Document object Model"
+        document.getElementById("pera").innerText="This is DOcument Objefct model practice".style.color="red"
+        document.getElementById("btn").innerText="clicked"
+
+    }
+
+</script>
+
+
+
+
+
+<!-- 2. document.getElementsByClassName() -->
+
+
+
+ <p class="text">Paragraph 1</p>
+ <p class="text">Paragraph 2</p>
+ <button onclick="changeColor()">Change Color</button>
+ <script>
+   function changeColor() {
+     let paragraphs = document.getElementsByClassName("text");
+     for (let i = 0; i < paragraphs.length; i++) {
+       paragraphs[i].style.color = "blue";
+     }
+   }
+ </script>
+
+  <div class="box">Box 1</div>
+ <div class="box">Box 2</div>
+ <button onclick="toggleBoxes()">Toggle Boxes</button>
+ <script>
+   function toggleBoxes() {
+     let boxes = document.getElementsByClassName("box");
+     for (let i = 0; i < boxes.length; i++) {
+       boxes[i].style.display = boxes[i].style.display === "none" ? "block" : "none";
+     }
+   }
+ </script>
+
+
+<!-- 3. document.getElementsByTagName() -->
+
+ <a href="#">Link 1</a>
+ <a href="#">Link 2</a>
+ <p id="linkCount"></p>
+ <script>
+   let links = document.getElementsByTagName("a");
+   document.getElementById("linkCount").innerText = "Total Links: " + links.length;
+ </script>
+
+
+ <img src="image1.jpg">
+ <img src="image2.jpg">
+ <script>
+   let images = document.getElementsByTagName("img");
+   for (let i = 0; i < images.length; i++) {
+     images[i].style.border = "2px solid black";
+   }
+ </script>
+
+
+<!-- 4. document.querySelector() -->
+
+ <p class="text">First Paragraph</p>
+ <p class="text">Second Paragraph</p>
+ <script>
+   document.querySelector(".text").style.color = "red";
+
+    
+ </script>
+ <input type="text" class="input-field">
+ <input type="text" class="input-field">
+ <script>
+   document.querySelector(".input-field").focus();
+ </script>
+
+<!-- 5. document.querySelectorAll()
+ -->
+
+  <li>Item 1</li>
+ <li>Item 2</li>
+ <script>
+   document.querySelectorAll("li").forEach(item => item.style.color = "blue");
+ </script>
+
+
+
+</body>
+</html>
+
