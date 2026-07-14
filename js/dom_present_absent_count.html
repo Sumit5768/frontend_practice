@@ -1,0 +1,54 @@
+<!-- Task 1 – Student Attendance Dashboard
+Create an attendance dashboard with a heading, a list of students and a button. Each
+student has either 'Present' or 'Absent'. On button click: Count Present students. Count
+Absent students. Update the heading to display both counts. Use:
+getElementsByClassName(), innerText/textContent, onclick, loops, if-else -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Dashboard</title>
+</head>
+<body>
+
+<h2 id="heading">Student Attendance</h2>
+
+<ul>
+    <li class="status">Present</li>
+    <li class="status">Absent</li>
+    <li class="status">Present</li>
+    <li class="status">Present</li>
+    <li class="status">Absent</li>
+</ul>
+
+<button onclick="countAttendance()">Count Attendance</button>
+
+<script>
+function countAttendance() {
+
+    let students = document.getElementsByClassName("status");
+
+    let present = 0;
+    let absent = 0;
+
+    for(let i=0; i<students.length; i++){
+
+        if(students[i].innerText == "Present"){
+            present++;
+        }else{
+            absent++;
+        }
+
+    }
+
+    document.getElementById("heading").innerText =
+    "Present : " + present + " | Absent : " + absent;
+
+}
+</script>
+
+
+</body>
+</html>

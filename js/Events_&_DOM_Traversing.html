@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Events Examples</title>
+</head>
+<body>
+
+    <h2>JavaScript DOM Events Examples</h2>
+
+    <!-- onclick -->
+    <h3>1. onclick</h3>
+    <button onclick="alert('Button Clicked!')">Click Me</button>
+    <p id="text">Hello</p>
+    <button onclick="document.getElementById('text').innerHTML='Welcome'">Change Text</button>
+
+    <hr>
+
+    <!-- ondblclick -->
+    <h3>2. ondblclick</h3>
+    <button ondblclick="alert('Double Clicked!')">Double Click</button>
+    <p ondblclick="this.style.color='red'">Double Click Me</p>
+
+    <hr>
+
+    <!-- onmouseover -->
+    <h3>3. onmouseover</h3>
+    <p onmouseover="this.style.color='blue'">Hover Over Me</p>
+    <img src="https://via.placeholder.com/150"
+         onmouseover="this.style.width='200px'">
+
+    <hr>
+
+    <!-- onmouseout -->
+    <h3>4. onmouseout</h3>
+    <p onmouseout="this.style.color='black'">Move Mouse Out</p>
+    <div onmouseout="alert('Mouse Left This Box')"
+         style="width:200px;height:50px;border:1px solid black;padding:10px;">
+        Hover Here and Move Out
+    </div>
+
+    <hr>
+
+    <!-- onkeydown -->
+    <h3>5. onkeydown</h3>
+    <input type="text" onkeydown="console.log('Key Pressed')" placeholder="Type Here">
+    <br><br>
+    <input type="text" onkeydown="this.style.background='yellow'" placeholder="Press Any Key">
+
+    <hr>
+
+    <!-- onkeyup -->
+    <h3>6. onkeyup</h3>
+    <input type="text" onkeyup="console.log(this.value)" placeholder="Type Here">
+    <br><br>
+    <input type="text" onkeyup="this.style.color='green'" placeholder="Type Here">
+
+    <hr>
+
+    <!-- onchange -->
+    <h3>7. onchange</h3>
+    <select onchange="alert(this.value)">
+        <option>Select</option>
+        <option>Java</option>
+        <option>Python</option>
+        <option>JavaScript</option>
+    </select>
+
+    <br><br>
+
+    <input type="text" onchange="alert('Value Changed')" placeholder="Change Value">
+
+    <hr>
+
+    <!-- onfocus -->
+    <h3>8. onfocus</h3>
+    <input type="text" onfocus="this.style.background='lightblue'" placeholder="Click Here">
+
+    <br><br>
+
+    <textarea onfocus="alert('Textarea Focused')"></textarea>
+
+    <hr>
+
+    <!-- onblur -->
+    <h3>9. onblur</h3>
+    <input type="text" onblur="this.style.background='white'" placeholder="Click then Leave">
+
+    <br><br>
+
+    <input type="text" onblur="alert('Input Lost Focus')" placeholder="Click then Leave">
+
+    <hr>
+
+    <!-- onload -->
+    <h3>10. onload</h3>
+    <p>Check the browser console and alert when page loads.</p>
+
+    <script>
+        window.onload = function () {
+            alert("Page Loaded Successfully!");
+            console.log("Page Loaded");
+        };
+    </script>
+
+</body>
+</html>

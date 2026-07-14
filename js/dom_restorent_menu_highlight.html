@@ -1,0 +1,47 @@
+<!-- Create a restaurant menu using list items. When the mouse moves over a menu item:
+Background becomes yellow. Text color becomes red. Font size becomes 24px. When
+the mouse leaves, restore the original style.
+Use: querySelectorAll(), onmouseover (and mouseout if you know it), style -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restaurant Menu</title>
+</head>
+<body>
+
+<ul>
+<li class="item">Pizza</li>
+<li class="item">Burger</li>
+<li class="item">Pasta</li>
+<li class="item">Sandwich</li>
+</ul>
+
+<script>
+
+let menu=document.querySelectorAll(".item");
+
+for(let i=0;i<menu.length;i++){
+
+menu[i].onmouseover=function(){
+
+this.style.background="yellow";
+this.style.color="red";
+this.style.fontSize="24px";
+
+}
+
+menu[i].onmouseout=function(){
+
+this.style.background="";
+this.style.color="";
+this.style.fontSize="";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
