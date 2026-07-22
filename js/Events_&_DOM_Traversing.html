@@ -91,16 +91,88 @@
 
     <hr>
 
-    <!-- onload -->
-    <h3>10. onload</h3>
-    <p>Check the browser console and alert when page loads.</p>
+   
 
-    <script>
-        window.onload = function () {
-            alert("Page Loaded Successfully!");
-            console.log("Page Loaded");
-        };
-    </script>
+
+
+"
+DOM Traversing in JavaScript
+DOM (Document Object Model) Traversing allows us to navigate through elements in a webpage structure by moving between parents, children, and siblings.
+
+1. parentNode & parentElement"
+
+
+
+ <div id="parent">
+   <p id="child">How are you?</p>
+ </div>
+
+
+
+
+
+ <script>
+   let child = document.getElementById("child");
+   console.log(child.parentNode); 
+ </script>
+
+ <div id="circle" style="height:200px; width: 200px;border-radius:50%;border:2px solid black;">
+   <button id="btn" margin:top-50px >Click Me</button>
+ </div>
+ <script>
+   document.getElementById("btn").addEventListener("click", function() {
+     this.parentElement.style.backgroundColor = "red";
+   });
+ </script>
+
+
+<!-- 2. childNodes & children -->
+
+ <ul id="list">
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+ </ul>
+ <script>
+   let list = document.getElementById("list");
+   console.log("Total children: ", list.children.length); // Outputs 3
+ </script>
+
+
+ <ul id="menu">
+   <li>Home</li>
+   <li>About</li>
+   <li>Contact</li>
+ </ul>
+
+
+ <script>
+   let menu = document.getElementById("menu");
+   for (let child of menu.children) {
+     console.log(child.innerText); // Logs each menu item text
+   }
+
+ </script>
+
+
+
+<!-- 3. nextElementSibling & previousElementSibling -->
+
+ <p id="para1">First Paragraph</p>
+ <p id="para2">Second Paragraph</p>
+ <script>
+   let firstPara = document.getElementById("para1");
+   firstPara.nextElementSibling.style.backgroundColor = "yellow";
+ </script>
+
+
+ <button id="btn1">Button 1</button>
+ <button id="btn2">Button 2</button>
+ <script>
+   let secondButton = document.getElementById("btn2");
+   console.log(secondButton.previousElementSibling.innerText); // Logs "Button 1"
+ </script>
+
 
 </body>
 </html>

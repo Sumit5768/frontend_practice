@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p class="price">800</p>
+<p class="price">1200</p>
+<p class="price">1500</p>
+<p class="price">700</p>
+
+<button onclick="offer()">Apply Offer</button>
+
+<script>
+
+function offer(){
+
+let prices = document.querySelectorAll(".price");
+
+for(let i=0; i<prices.length; i++){
+
+if(prices[i].innerText > 1000){
+
+prices[i].style.color = "green";
+
+prices[i].innerHTML = prices[i].innerText + "<br>20% OFF";
+
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

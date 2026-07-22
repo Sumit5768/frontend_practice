@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<select id="course" onchange="showBatch()">
+
+<option>Select Course</option>
+<option>JavaScript</option>
+<option>React</option>
+<option>Node</option>
+
+</select>
+
+<h3 id="msg"></h3>
+
+<script>
+
+function showBatch(){
+
+let course=document.getElementById("course").value;
+
+let msg=document.getElementById("msg");
+
+if(course=="JavaScript"){
+
+msg.innerText="JavaScript Batch Starts Monday";
+msg.style.color="blue";
+
+}
+
+else if(course=="React"){
+
+msg.innerText="React Batch Starts Friday";
+msg.style.color="green";
+
+}
+
+else if(course=="Node"){
+
+msg.innerText="Node Batch Starts Sunday";
+msg.style.color="red";
+
+}
+
+else{
+
+msg.innerText="";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

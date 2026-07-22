@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="emp" value="101">Employee ID: 101</h2>
+
+<br><br>
+
+<button onclick="verify()">Verify Employee</button>
+
+<script>
+
+function verify(){
+
+let employee = document.getElementById("emp");
+
+console.log(employee.getAttribute("value"));
+
+employee.setAttribute("value","102");
+
+employee.innerText = "Employee ID: " + employee.getAttribute("value");
+
+employee.style.border = "5px solid green";
+
+}
+
+</script>
+
+</body>
+</html>

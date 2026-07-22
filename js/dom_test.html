@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+</head>
+<body>
+
+<h1>Restaurant Menu Highlight</h1>
+
+<ul id="menu">
+    <li class="item">Pizza</li>
+    <li class="item">Cold Coffee</li>
+    <li class="item">Tea</li>
+    <li class="item">Ice Cream</li>
+</ul>
+
+<script>
+    let items = document.querySelectorAll(".item");
+
+    for(let i = 0; i < items.length; i++) {
+
+        items[i].onmouseover = function() {
+            this.style.backgroundColor = "yellow";
+            this.style.color = "red";
+            this.style.fontSize = "24px";
+        };
+
+        items[i].onmouseout = function() {
+            this.style.backgroundColor = "";
+            this.style.color = "";
+            this.style.fontSize = "";
+        };
+    }
+</script>
+
+</body>
+</html>
